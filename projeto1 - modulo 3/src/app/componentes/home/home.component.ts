@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
+import { HomeService } from '../services/home.service';
 
 
 export interface Pessoa {
@@ -9,7 +10,7 @@ export interface Pessoa {
   salario: string;
 }
 
-export interface Pessoas extends Array<Pessoa>{}
+export interface Pessoas extends Array<Pessoa> { }
 
 
 @Component({
@@ -19,13 +20,19 @@ export interface Pessoas extends Array<Pessoa>{}
 })
 export class HomeComponent {
 
-  title = null; 
+  title = null;
+
+  constructor(private homeService: HomeService) {
+
+  }
 
   clientes!: Pessoas;
   displayedColumns: string[] = ['nome', 'sexo', 'idade', 'salario'];
   dataSource !: MatTableDataSource<any>;
   ngOnInit() {
-    this.dataSource = new MatTableDataSource(this.clientes);    
+    this.homeService.getClientes().subscribe(clientes => {
+      this.clientes = clientes;
+      this.dataSource = new MatTableDataSource(this.clientes);
+    })
   }
-
 }
