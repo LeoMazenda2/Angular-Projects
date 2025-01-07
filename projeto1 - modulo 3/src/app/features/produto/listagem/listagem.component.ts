@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from '../services/produto.service';
-import { Produtos } from '../models/produto.model';
+import { Produto, Produtos } from '../models/produto.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listagem',
@@ -11,17 +12,19 @@ export class ListagemComponent implements OnInit{
 
   produtos!: Produtos 
 
-  constructor(private produtoService: ProdutoService){
+  constructor(private produtoService: ProdutoService, 
+    private router: Router){
 
   }
 
   ngOnInit(): void {    
     this.produtoService.getProductos()
     .subscribe(produtos => {
-     this.produtos = produtos;
-    //  console.log(this.produtos);
-    });
-    
-    // this.produtos[1].preco = 'R$ 100,00';
+     this.produtos = produtos;  
+    }); 
+  }
+
+  selecionarProduto(produto: Produto){
+   this.router.navigate(['produto', 'editar-produto',produto.id]);
   }
 }

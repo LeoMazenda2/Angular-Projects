@@ -1,6 +1,7 @@
 {
   "produtos": [
     {
+      "id": 1,
       "nome": "Teclado Gamer",
       "descricao": "Teclado gamer RGB multi-devices",
       "imagemUrl": "https://m.media-amazon.com/images/I/61nvk16RZrL._AC_SX679_.jpg",
@@ -8,6 +9,7 @@
       "estoque": 12
     },
     {
+      "id": 2,
       "nome": "Mouse Gamer",
       "descricao": "Mouse gamer RGB 1200dpi",
       "imagemUrl": "https://acdn.mitiendanube.com/stores/862/292/products/s20-81-cbbbdf72c7915bf56716540226854544-1024-1024.webp",
@@ -15,6 +17,7 @@
       "estoque": 56
     },
     {
+      "id": 3,
       "nome": "Monitor Ultra Wide",
       "descricao": "Monitor Ultra Wide 29 polegadas IPS 144ms",
       "imagemUrl": "https://m.media-amazon.com/images/I/51Ufkd4a13L._AC_SX679_.jpg",
@@ -22,6 +25,7 @@
       "estoque": 5
     },
     {
+      "id": 4,
       "nome": "Notebook Gamer",
       "descricao": "Notebook Gamer com placa dedicada",
       "imagemUrl": "https://m.media-amazon.com/images/I/61tegGxILZL._AC_SX679_.jpg",
@@ -29,6 +33,7 @@
       "estoque": 2
     },
     {
+      "id": 5,
       "nome": "Headset Gamer",
       "descricao": "Headset gamer com som surround",
       "imagemUrl": "https://m.media-amazon.com/images/I/61hj6TZ6FwL._AC_SX679_.jpg",
@@ -36,6 +41,7 @@
       "estoque": 15
     },
     {
+      "id": 6,
       "nome": "Cadeira Gamer",
       "descricao": "Cadeira gamer ergonômica",
       "imagemUrl": "https://tgtgamer.com.br/wp-content/uploads/2022/11/tgt-hr-rgb0154127.jpg",
@@ -43,6 +49,7 @@
       "estoque": 8
     },
     {
+      "id": 7,
       "nome": "Gabinete Gamer",
       "descricao": "Gabinete gamer com RGB",
       "imagemUrl": "https://images.tcdn.com.br/img/img_prod/1224084/gabinete_gamer_k_mex_infinity_ii_mid_tower_com_3_fans_blue_lateral_em_acrilico_black_sem_fonte_cg_xx_192_1_5274c887f62a409699565fe5e06b82e9.jpg",
@@ -50,6 +57,7 @@
       "estoque": 20
     },
     {
+      "id": 8,
       "nome": "Placa de Vídeo",
       "descricao": "Placa de vídeo RTX 3060",
       "imagemUrl": "https://s.zst.com.br/cms-assets/2021/07/placas-de-v-deo-8-gb.jpg",
@@ -57,6 +65,7 @@
       "estoque": 7
     },
     {
+      "id": 9,
       "nome": "Fonte 750W",
       "descricao": "Fonte gamer 750W modular",
       "imagemUrl": "https://cdn.dooca.store/151246/products/palbyqxfkrpvfnyqy5ovpul0zfygr7h6_620x620+fill_ffffff.jpg?v=1718841199",
@@ -64,6 +73,7 @@
       "estoque": 25
     },
     {
+      "id": 10,
       "nome": "Teclado Mecânico",
       "descricao": "Teclado mecânico RGB compact",
       "imagemUrl": "https://cdn2.unrealengine.com/mechanical-keyboard-diagonal-4080x2295-d50ff434f19c.jpg",
@@ -71,6 +81,7 @@
       "estoque": 10
     },
     {
+      "id": 11,
       "nome": "SSD 1TB",
       "descricao": "SSD 1TB NVMe",
       "imagemUrl": "https://www.kingstonstore.com.br/cdn/shop/products/KC600_1T_700x.jpg?v=1581447804",
@@ -78,6 +89,7 @@
       "estoque": 18
     },
     {
+      "id": 12,
       "nome": "Cooler para CPU",
       "descricao": "Cooler para CPU com dissipador",
       "imagemUrl": "https://m.media-amazon.com/images/I/71QC4YDta3L._AC_SX679_.jpg",
@@ -85,6 +97,7 @@
       "estoque": 30
     },
     {
+      "id": 13,
       "nome": "Roteador Gamer",
       "descricao": "Roteador gamer Wi-Fi 6",
       "imagemUrl": "http://techrecomenda.com/wp-content/uploads/2024/10/71Y8TeozxKL._AC_SL1500_.jpg",
@@ -92,6 +105,7 @@
       "estoque": 12
     },
     {
+      "id": 14,
       "nome": "Controle Sem Fio",
       "descricao": "Controle sem fio para PC e consoles",
       "imagemUrl": "https://m.media-amazon.com/images/I/71Etv0vtPUL._AC_SX679_.jpg",

@@ -1,6 +1,7 @@
 .example-card {
     max-width: 300px;
-    margin: 2px;
+    // margin: 1px;
+    cursor: pointer;
   }
   
  .flex {
@@ -9,3 +10,23 @@
     flex-wrap: wrap;
     justify-content: space-around; // 1rem = 16px
   }
+
+  img {   
+    height: 300px;
+    object-fit: contain;
+  }
+
+  .title {
+    font: 500;
+    margin :0 auto;
+  }
+
+  .preco {
+    font-size: 25px;
+    color: green;
+  }
+
+  .estoque {
+    color: red;
+  }
+
