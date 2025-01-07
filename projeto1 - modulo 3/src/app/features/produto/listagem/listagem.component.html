@@ -1,1 +1,22 @@
-<p>listagem works!</p>
+<h1>lista de productos</h1>
+<hr>
+
+<div class="flex">
+    <mat-card class="example-card" appearance="outlined" *ngFor="let produto of produtos">
+        <mat-card-header>
+            <mat-card-title>{{produto.nome}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="produto.imagemUrl" alt="foto do producto">
+        <mat-card-content>
+            <p>
+                {{produto.descricao}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions class="flex">
+            <p>Quantidade: {{produto.estoque}}</p> 
+            <p>Preço: {{produto.preco | currency: 'AOA '}}</p>
+        </mat-card-actions>
+    </mat-card>
+
+</div>
+<hr>

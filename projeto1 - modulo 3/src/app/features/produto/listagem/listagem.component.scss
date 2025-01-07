@@ -1,0 +1,11 @@
+.example-card {
+    max-width: 300px;
+    margin: 2px;
+  }
+  
+ .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; // 1rem = 16px
+  }

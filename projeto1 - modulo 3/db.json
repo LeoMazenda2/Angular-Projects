@@ -10,7 +10,7 @@
     {
       "nome": "Mouse Gamer",
       "descricao": "Mouse gamer RGB 1200dpi",
-      "imagemUrl": "https://m.media-amazon.com/images/I/51H+ecG+GgL._AC_SX679_.jpg",
+      "imagemUrl": "https://acdn.mitiendanube.com/stores/862/292/products/s20-81-cbbbdf72c7915bf56716540226854544-1024-1024.webp",
       "preco": "59",
       "estoque": 56
     },
@@ -31,74 +31,74 @@
     {
       "nome": "Headset Gamer",
       "descricao": "Headset gamer com som surround",
-      "imagemUrl": "https://m.media-amazon.com/images/I/71ZPWgcf7eL._AC_SX679_.jpg",
+      "imagemUrl": "https://m.media-amazon.com/images/I/61hj6TZ6FwL._AC_SX679_.jpg",
       "preco": "250",
       "estoque": 15
     },
     {
       "nome": "Cadeira Gamer",
       "descricao": "Cadeira gamer ergonômica",
-      "imagemUrl": "https://m.media-amazon.com/images/I/81P5AonXG4L._AC_SX679_.jpg",
+      "imagemUrl": "https://tgtgamer.com.br/wp-content/uploads/2022/11/tgt-hr-rgb0154127.jpg",
       "preco": "1200",
       "estoque": 8
     },
     {
       "nome": "Gabinete Gamer",
       "descricao": "Gabinete gamer com RGB",
-      "imagemUrl": "https://m.media-amazon.com/images/I/71gwmOlyXZL._AC_SX679_.jpg",
+      "imagemUrl": "https://images.tcdn.com.br/img/img_prod/1224084/gabinete_gamer_k_mex_infinity_ii_mid_tower_com_3_fans_blue_lateral_em_acrilico_black_sem_fonte_cg_xx_192_1_5274c887f62a409699565fe5e06b82e9.jpg",
       "preco": "350",
       "estoque": 20
     },
     {
       "nome": "Placa de Vídeo",
       "descricao": "Placa de vídeo RTX 3060",
-      "imagemUrl": "https://m.media-amazon.com/images/I/81BL+GrlymL._AC_SX679_.jpg",
+      "imagemUrl": "https://s.zst.com.br/cms-assets/2021/07/placas-de-v-deo-8-gb.jpg",
       "preco": "2800",
       "estoque": 7
     },
     {
       "nome": "Fonte 750W",
       "descricao": "Fonte gamer 750W modular",
-      "imagemUrl": "https://m.media-amazon.com/images/I/71V7YkQ95mL._AC_SX679_.jpg",
+      "imagemUrl": "https://cdn.dooca.store/151246/products/palbyqxfkrpvfnyqy5ovpul0zfygr7h6_620x620+fill_ffffff.jpg?v=1718841199",
       "preco": "499",
       "estoque": 25
     },
     {
       "nome": "Teclado Mecânico",
       "descricao": "Teclado mecânico RGB compact",
-      "imagemUrl": "https://m.media-amazon.com/images/I/61kngWPA3BL._AC_SX679_.jpg",
+      "imagemUrl": "https://cdn2.unrealengine.com/mechanical-keyboard-diagonal-4080x2295-d50ff434f19c.jpg",
       "preco": "299",
       "estoque": 10
     },
     {
       "nome": "SSD 1TB",
       "descricao": "SSD 1TB NVMe",
-      "imagemUrl": "https://m.media-amazon.com/images/I/71rfXqrGJZL._AC_SX679_.jpg",
+      "imagemUrl": "https://www.kingstonstore.com.br/cdn/shop/products/KC600_1T_700x.jpg?v=1581447804",
       "preco": "600",
       "estoque": 18
     },
     {
       "nome": "Cooler para CPU",
       "descricao": "Cooler para CPU com dissipador",
-      "imagemUrl": "https://m.media-amazon.com/images/I/61GgEumD12L._AC_SX679_.jpg",
+      "imagemUrl": "https://m.media-amazon.com/images/I/71QC4YDta3L._AC_SX679_.jpg",
       "preco": "200",
       "estoque": 30
     },
     {
       "nome": "Roteador Gamer",
       "descricao": "Roteador gamer Wi-Fi 6",
-      "imagemUrl": "https://m.media-amazon.com/images/I/61yUYM8HjKL._AC_SX679_.jpg",
+      "imagemUrl": "http://techrecomenda.com/wp-content/uploads/2024/10/71Y8TeozxKL._AC_SL1500_.jpg",
       "preco": "700",
       "estoque": 12
     },
     {
       "nome": "Controle Sem Fio",
       "descricao": "Controle sem fio para PC e consoles",
-      "imagemUrl": "https://m.media-amazon.com/images/I/71jNBx0VgtL._AC_SX679_.jpg",
+      "imagemUrl": "https://m.media-amazon.com/images/I/71Etv0vtPUL._AC_SX679_.jpg",
       "preco": "280",
       "estoque": 22
     }
-  ],
+   ],
 
   "clientes": [
     {

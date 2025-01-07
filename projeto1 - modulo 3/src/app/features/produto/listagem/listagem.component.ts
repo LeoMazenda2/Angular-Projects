@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdutoService } from '../services/produto.service';
+import { Produtos } from '../models/produto.model';
 
 @Component({
   selector: 'app-listagem',
@@ -8,25 +9,19 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class ListagemComponent implements OnInit{
 
+  produtos!: Produtos 
+
   constructor(private produtoService: ProdutoService){
 
   }
 
-  // RXJS
-  // Javascript axios axios.get() requisicao assincrona 
-  // async return await === Promisse
-  // Angular usa RXJS e o RXJS nao usa Promisse
-  // Angular usa Observable === Cano 
   ngOnInit(): void {    
-    this.produtoService.getCidadePeloCep().subscribe(resposta => {
-      console.log(resposta)
+    this.produtoService.getProductos()
+    .subscribe(produtos => {
+     this.produtos = produtos;
+    //  console.log(this.produtos);
     });
+    
+    // this.produtos[1].preco = 'R$ 100,00';
   }
-
-  // getDoJavascript(){
-  //   this.produtoService.getCidadePeloCep().them( resposta => {
-  //     this.cep = resposta
-  //   })
-  // }
-
 }
