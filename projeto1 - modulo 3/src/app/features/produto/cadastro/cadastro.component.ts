@@ -12,12 +12,15 @@ export class CadastroComponent implements OnInit {
 
   id!: string;
   produto!: Produto
+  rota: string ='';
+  isNovoProduto: boolean = false;
 
   //template driven (depressiado)
   nome: string = '';
   descricao: string = '';
   preco: string = '';
   estoque: number = 0;
+  tituloPagina: string ='';
 
   constructor(private produtoService: ProdutoService, 
     private activatedeRoute: ActivatedRoute,
@@ -27,17 +30,26 @@ export class CadastroComponent implements OnInit {
 
   ngOnInit(): void {
    // Recuperar o Producto pelo ID
-   this.id = this.activatedeRoute.snapshot.url[1].path;
+   this.rota = this.activatedeRoute.snapshot.url[0].path;
 
-   this.produtoService.getprodutoPeloId(this.id).subscribe((produto: Produto) => {
-     //template driven (depressiado)
-      this.produto = produto;
-      this.nome = produto.nome;
-      this.descricao = produto.descricao;
-      this.preco = produto.preco;
-      this.estoque = produto.estoque;
-      
-   });
+    if(this.rota === 'editar-produto') {
+      this.id = this.activatedeRoute.snapshot.url[1].path;
+   
+      this.produtoService.getprodutoPeloId(this.id).subscribe((produto: Produto) => {
+        //template driven (depressiado)
+         this.produto = produto;
+         this.nome = produto.nome;
+         this.descricao = produto.descricao;
+         this.preco = produto.preco;
+         this.estoque = produto.estoque;  
+         this.tituloPagina = `A editar o producto ${this.nome.toUpperCase()}`    
+      });
+    } else {
+      this.isNovoProduto = true;
+      this.tituloPagina = 'Novo Producto'
+    }
+
+
   }
 
   salvarProduto(){
