@@ -13,15 +13,20 @@ export class ProdutoService {
   private baseUrl = 'http://localhost:3000/';
 
   constructor(private http: HttpClient) {
-    
-   }
 
-   //recuperar a lista de produtos
-   getProductos(): Observable<Produtos>{
-      return this.http.get<Produtos>(`${this.baseUrl}produtos`);
-   }
+  }
 
-   getprodutoPeloId(id: string): Observable<Produto>{
+  //recuperar a lista de produtos
+  getProductos(): Observable<Produtos> {
+    return this.http.get<Produtos>(`${this.baseUrl}produtos`);
+  }
+
+  getprodutoPeloId(id: string): Observable<Produto> {
     return this.http.get<Produto>(`${this.baseUrl}produtos/${id}`);
-}
+  }
+
+  actualizarProduto(produto: Produto): Observable<any> {
+    return this.http.put(`${this.baseUrl}produtos/${produto.id}`, produto);
+  }
+
 }
