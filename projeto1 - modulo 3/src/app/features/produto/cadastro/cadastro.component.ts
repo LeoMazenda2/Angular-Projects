@@ -42,31 +42,43 @@ export class CadastroComponent implements OnInit {
          this.descricao = produto.descricao;
          this.preco = produto.preco;
          this.estoque = produto.estoque;  
-         this.tituloPagina = `A editar o producto ${this.nome.toUpperCase()}`    
+         this.tituloPagina = `A editar producto`    
       });
     } else {
       this.isNovoProduto = true;
-      this.tituloPagina = 'Novo Producto'
+      this.tituloPagina = 'A adiconar Producto'
     }
 
 
   }
 
   salvarProduto(){
-
-    const novoProduto = {
+    const produtoParaSalavar: Produto = {
       id: parseInt(this.id),
       nome: this.nome,
+      preco: this.preco,    
       descricao: this.descricao,
-      preco: this.preco,
-      imagemUrl: this.produto.imagemUrl,
       estoque: this.estoque
     }
 
-    console.log(novoProduto);
+    console.log(produtoParaSalavar);
 
-    this.produtoService.actualizarProduto(novoProduto).subscribe(Response =>{
-      alert('Produto actualizado com sucesso');
+    if(this.isNovoProduto){
+      this.adiconarProduto(produtoParaSalavar);
+    } else{
+      produtoParaSalavar.imagemUrl = this.produto.imagemUrl;
+      this.atualizarProduto(produtoParaSalavar);
+    }    
+  }
+
+  atualizarProduto(produtoParaSalavar: Produto){
+    this.produtoService.actualizarProduto(produtoParaSalavar).subscribe(Response =>{
+      this.router.navigate(["produto","listagem"]);
+    });
+  }
+
+  adiconarProduto(produtoParaSalavar: Produto){
+    this.produtoService.aicionarProduto(produtoParaSalavar).subscribe(Response =>{
       this.router.navigate(["produto","listagem"]);
     });
   }

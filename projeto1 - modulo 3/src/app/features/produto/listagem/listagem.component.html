@@ -1,12 +1,28 @@
 <h1>Lista de Produtos</h1>
 <hr>
 
+<div class="example-button-container">
+    <button mat-fab color="primary" matTooltip="Adiconar novo producto"
+        aria-label="Example icon button with a heart icon" (click)="adiconarProduto()">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+
 <div class="flex">
-    <mat-card class="example-card" appearance="outlined" *ngFor="let produto of produtos" (click)="selecionarProduto(produto)">
-        <mat-card-header>
+    <mat-card class="example-card" appearance="outlined" *ngFor="let produto of produtos"
+        (click)="selecionarProduto(produto)">
+        <mat-card-header class="flex">
             <mat-card-title class="title">{{produto.nome}}</mat-card-title>
+
+            <div>
+                <button mat-mini-fab color="accent" matTooltip="Adiconar novo producto"
+                    aria-label="Example icon button with a heart icon" (click)="adiconarProduto()">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+
         </mat-card-header>
-        <img mat-card-image [src]="produto.imagemUrl" alt="foto do produto">   
+        <img mat-card-image [src]="produto.imagemUrl" alt="foto do produto">
         <mat-card-content>
             <hr>
             <p class="descricao">
@@ -15,7 +31,7 @@
         </mat-card-content>
         <mat-card-actions class="flex">
             <p class="preco">Preço: {{produto.preco | currency: 'AOA '}}</p>
-            <p class="estoque">Quantidade: {{produto.estoque}}</p> 
+            <p class="estoque">Quantidade: {{produto.estoque}}</p>
         </mat-card-actions>
     </mat-card>
 </div>

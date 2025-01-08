@@ -1,32 +1,39 @@
 .example-card {
-    max-width: 300px;
-    // margin: 1px;
-    cursor: pointer;
-  }
-  
- .flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; // 1rem = 16px
-  }
+  max-width: 300px;
+  margin: 10px;
+  cursor: pointer;
+}
 
-  img {   
-    height: 300px;
-    object-fit: contain;
-  }
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; // 1rem = 16px
+}
 
-  .title {
-    font: 500;
-    margin :0 auto;
-  }
+img {
+  height: 300px;
+  object-fit: contain;
+}
 
-  .preco {
-    font-size: 25px;
-    color: green;
-  }
+.title {
+  font: 500;
+  margin: 0 auto;
+}
 
-  .estoque {
-    color: red;
-  }
+.preco {
+  font-size: 25px;
+  color: green;
+}
 
+.estoque {
+  color: red;
+}
+
+.example-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: flex-end;
+  margin: 10px;
+}

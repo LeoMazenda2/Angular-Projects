@@ -50,7 +50,7 @@
     },
     {
       "id": "7",
-      "nome": "Gabinete Gamer 232423",
+      "nome": "Gabinete Gamer",
       "descricao": "Gabinete gamer com RGB",
       "preco": "350",
       "imagemUrl": "https://images.tcdn.com.br/img/img_prod/1224084/gabinete_gamer_k_mex_infinity_ii_mid_tower_com_3_fans_blue_lateral_em_acrilico_black_sem_fonte_cg_xx_192_1_5274c887f62a409699565fe5e06b82e9.jpg",
@@ -76,9 +76,9 @@
       "id": "10",
       "nome": "Teclado Mecânico",
       "descricao": "Teclado mecânico RGB compact",
-      "imagemUrl": "https://cdn2.unrealengine.com/mechanical-keyboard-diagonal-4080x2295-d50ff434f19c.jpg",
       "preco": "299",
-      "estoque": 10
+      "estoque": 122,
+      "imagemUrl": "https://cdn2.unrealengine.com/mechanical-keyboard-diagonal-4080x2295-d50ff434f19c.jpg"
     },
     {
       "id": "11",
@@ -108,11 +108,23 @@
       "id": "14",
       "nome": "Controle Sem Fio",
       "descricao": "Controle sem fio para PC e consoles",
-      "imagemUrl": "https://m.media-amazon.com/images/I/71Etv0vtPUL._AC_SX679_.jpg",
       "preco": "280",
-      "estoque": 22
+      "estoque": 2,
+      "imagemUrl": "https://m.media-amazon.com/images/I/71Etv0vtPUL._AC_SX679_.jpg"
+    },
+    {
+      "id": "15",
+      "nome": "Luminária ",
+      "preco": "12",
+      "descricao": "Luminária para monitor",
+      "estoque": 2
     }
   ],
+
+
+
+
+
   "clientes": [
     {
       "nome": "Alexandre",
