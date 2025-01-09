@@ -113,18 +113,13 @@
       "imagemUrl": "https://m.media-amazon.com/images/I/71Etv0vtPUL._AC_SX679_.jpg"
     },
     {
-      "id": "15",
-      "nome": "Luminária ",
-      "preco": "12",
-      "descricao": "Luminária para monitor",
-      "estoque": 2
+      "id": null,
+      "nome": "Mause super gamme",
+      "preco": "1231",
+      "descricao": "fwefwer",
+      "estoque": 1
     }
   ],
-
-
-
-
-
   "clientes": [
     {
       "nome": "Alexandre",
