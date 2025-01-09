@@ -20,6 +20,7 @@ export class CadastroComponent implements OnInit {
   descricao: string = '';
   preco: string = '';
   estoque: number = 0;
+  
   tituloPagina: string ='';
 
   constructor(private produtoService: ProdutoService, 

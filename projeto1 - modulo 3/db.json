@@ -111,13 +111,6 @@
       "preco": "280",
       "estoque": 2,
       "imagemUrl": "https://m.media-amazon.com/images/I/71Etv0vtPUL._AC_SX679_.jpg"
-    },
-    {
-      "id": null,
-      "nome": "Mause super gamme",
-      "preco": "1231",
-      "descricao": "fwefwer",
-      "estoque": 1
     }
   ],
   "clientes": [

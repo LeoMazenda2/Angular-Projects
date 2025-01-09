@@ -36,7 +36,6 @@ export class ListagemComponent implements OnInit{
     this.produtoService.excluirProduto(produto.id?.toString())
     .subscribe(response => {
        this.router.navigate(['produto']);
-      
     });
    }
 }
