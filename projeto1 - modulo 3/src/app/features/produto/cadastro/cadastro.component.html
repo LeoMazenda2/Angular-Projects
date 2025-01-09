@@ -3,24 +3,41 @@
 
 <form class="example-form" [formGroup]="formCadastroProduto">
     <mat-form-field class="example-full-width">
-        <mat-label>Titulo</mat-label>
+        <mat-label>Título</mat-label>
         <input matInput placeholder="Titulo do produto" formControlName="nome">
+        <mat-error>Porfavoor, informe um título (obrigatóriamente)</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Preço</mat-label>
         <input matInput placeholder="Digite um preço" formControlName="preco">
+        <mat-error>Porfavoor, informe o preço (obrigatóriamente)</mat-error>
+    </mat-form-field>
+
+    
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Digite um preço" formControlName="preco">
+        <mat-error>Porfavoor, informe o preço (obrigatóriamente)</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Digite um email" formControlName="email">
+        <mat-error>Porfavoor, informe um Email válido (obrigatóriamente)</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Estoque</mat-label>
         <input matInput type="number" placeholder="Digite o valor do estoque" formControlName="estoque">
+        <!-- linha de validação do campo -->
+        <mat-error>Por favoor, informe o estoque (obrigatóriamente)</mat-error> 
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
-        <mat-label>Descriçºao</mat-label>
-        <textarea matInput placeholder="Faça uma descrição do producto"  formControlName="descricao">            
-        </textarea>
+        <mat-label>Descrição</mat-label>
+        <textarea matInput placeholder="Faça uma descrição do producto"  formControlName="descricao"></textarea>
+        <mat-error>Por favoor, informe uma descrição (obrigatóriamente)</mat-error>
     </mat-form-field>
-    <button mat-raised-button color="primary" (click)="salvarProduto()">salvar</button>
+    <button mat-raised-button color="primary" (click)="salvarProduto()" [disabled]="!formCadastroProduto.valid">salvar</button>
 </form>

@@ -1,14 +1,6 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "nome": "Teclado Gamer",
-      "descricao": "Teclado gamer RGB multi-devices",
-      "imagemUrl": "https://m.media-amazon.com/images/I/61nvk16RZrL._AC_SX679_.jpg",
-      "preco": "150",
-      "estoque": 12
-    },
-    {
       "id": "2",
       "nome": "Mouse Gamer 2025",
       "descricao": "Mouse gamer RGB 1200dpi",
