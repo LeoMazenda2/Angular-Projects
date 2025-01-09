@@ -1,14 +1,6 @@
 {
   "produtos": [
     {
-      "id": "2",
-      "nome": "Mouse Gamer 2025",
-      "descricao": "Mouse gamer RGB 1200dpi",
-      "preco": "59",
-      "imagemUrl": "https://acdn.mitiendanube.com/stores/862/292/products/s20-81-cbbbdf72c7915bf56716540226854544-1024-1024.webp",
-      "estoque": 56
-    },
-    {
       "id": "3",
       "nome": "Monitor Ultra Wide",
       "descricao": "Monitor Ultra Wide 29 polegadas IPS 144ms",
@@ -39,14 +31,6 @@
       "imagemUrl": "https://tgtgamer.com.br/wp-content/uploads/2022/11/tgt-hr-rgb0154127.jpg",
       "preco": "1200",
       "estoque": 8
-    },
-    {
-      "id": "7",
-      "nome": "Gabinete Gamer",
-      "descricao": "Gabinete gamer com RGB",
-      "preco": "350",
-      "imagemUrl": "https://images.tcdn.com.br/img/img_prod/1224084/gabinete_gamer_k_mex_infinity_ii_mid_tower_com_3_fans_blue_lateral_em_acrilico_black_sem_fonte_cg_xx_192_1_5274c887f62a409699565fe5e06b82e9.jpg",
-      "estoque": 20
     },
     {
       "id": "8",

@@ -5,39 +5,41 @@
     <mat-form-field class="example-full-width">
         <mat-label>Título</mat-label>
         <input matInput placeholder="Titulo do produto" formControlName="nome">
-        <mat-error>Porfavoor, informe um título (obrigatóriamente)</mat-error>
+        <mat-error>Por favor, informe um título (obrigatóriamente)</mat-error>
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Preço</mat-label>
         <input matInput placeholder="Digite um preço" formControlName="preco">
-        <mat-error>Porfavoor, informe o preço (obrigatóriamente)</mat-error>
-    </mat-form-field>
-
-    
-    <mat-form-field class="example-full-width">
-        <mat-label>Password</mat-label>
-        <input matInput placeholder="Digite um preço" formControlName="preco">
-        <mat-error>Porfavoor, informe o preço (obrigatóriamente)</mat-error>
+        <mat-error>Por favor, informe o preço (obrigatóriamente)</mat-error>
     </mat-form-field>
     
     <mat-form-field class="example-full-width">
         <mat-label>Email</mat-label>
         <input matInput placeholder="Digite um email" formControlName="email">
-        <mat-error>Porfavoor, informe um Email válido (obrigatóriamente)</mat-error>
+        <mat-error>Por favor, informe um Email válido (obrigatóriamente)</mat-error>
+    </mat-form-field>
+    
+    <!-- validand várias regras de validação -->
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput placeholder="Digite um password" formControlName="password" #password>
+        <mat-error>Por favor, informe uma senha</mat-error>
+        <!-- <mat-error *ngIf="">A sua senha precisa ter pelo menos 8 caacteres</mat-error>
+        <mat-error *ngIf="">A Senha deverá ter pelo menos um carater mMaiuscula, Minuscula e Número</mat-error> -->
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Estoque</mat-label>
         <input matInput type="number" placeholder="Digite o valor do estoque" formControlName="estoque">
         <!-- linha de validação do campo -->
-        <mat-error>Por favoor, informe o estoque (obrigatóriamente)</mat-error> 
+        <mat-error>Por favor, informe o estoque (obrigatóriamente)</mat-error> 
     </mat-form-field>
 
     <mat-form-field class="example-full-width">
         <mat-label>Descrição</mat-label>
         <textarea matInput placeholder="Faça uma descrição do producto"  formControlName="descricao"></textarea>
-        <mat-error>Por favoor, informe uma descrição (obrigatóriamente)</mat-error>
+        <mat-error>Por favor, informe uma descrição (obrigatóriamente)</mat-error>
     </mat-form-field>
     <button mat-raised-button color="primary" (click)="salvarProduto()" [disabled]="!formCadastroProduto.valid">salvar</button>
 </form>
